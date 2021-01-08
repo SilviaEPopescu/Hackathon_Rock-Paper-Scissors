@@ -138,3 +138,14 @@ let endGame;
 //     endGame = confirm("Do you want to play again?");
 // } while(endGame)
 
+//task7
+
+let output = document.querySelector("#output");
+let rock = document.querySelector("#rock");
+function selectRock(e) {
+    if(e) {
+        let result = getWinner("rock", getComputerMove()); 
+        output.innerText 
+    }
+}
+rock.addEventListener("click", selectRock);
