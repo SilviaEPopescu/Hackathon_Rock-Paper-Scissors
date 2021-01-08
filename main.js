@@ -62,3 +62,8 @@ function getWinner(playerMove, computerMove) {
 }
 let result = getWinner(playerMove, computerMove);
 console.log(result);
+
+//Task3
+
+let playerMove = prompt("Pick an option");
+
