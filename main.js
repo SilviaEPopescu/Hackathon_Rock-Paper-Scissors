@@ -121,10 +121,14 @@ function getResult(result) {
 }
 
 function outputResults(){
-    console.log(`Games ${games}`)
-    console.log(`Wins ${wins}`)
-    console.log(`Losses ${losses}`)
-    console.log(`Draws ${draws}`)
+    // console.log(`Games ${games}`)
+    // console.log(`Wins ${wins}`)
+    // console.log(`Losses ${losses}`)
+    // console.log(`Draws ${draws}`)
+    games1.innerHTML = `Games ${games}`;
+    wins1.innerHTML = `Wins ${wins}`;
+    losses1.innerHTML = `Losses ${losses}`;
+    draws1.innerHTML = `Draws ${draws}`;
 }
 
 //Task5
@@ -139,6 +143,12 @@ let endGame;
 // } while(endGame)
 
 //task7
+
+let games1 = document.querySelector("#games");
+let wins1 = document.querySelector("#wins");
+let losses1 = document.querySelector("#losses");
+let draws1 = document.querySelector("#draws");
+
 
 let output = document.querySelector("#output");
 let rock = document.querySelector("#rock");
