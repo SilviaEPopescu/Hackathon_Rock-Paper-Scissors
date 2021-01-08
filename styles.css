@@ -22,3 +22,7 @@
     margin: 4px 2px;
 
   }
+  #scores {
+      display: flex;
+      flex-direction: row;
+  }
