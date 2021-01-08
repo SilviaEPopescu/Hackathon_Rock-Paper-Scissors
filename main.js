@@ -145,7 +145,7 @@ let rock = document.querySelector("#rock");
 function selectRock(e) {
     if(e) {
         let result = getWinner("rock", getComputerMove()); 
-        output.innerText 
+        output.innerHTML = getResult(result);
     }
 }
 rock.addEventListener("click", selectRock);
