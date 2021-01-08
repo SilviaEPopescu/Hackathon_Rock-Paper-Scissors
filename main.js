@@ -146,6 +146,33 @@ function selectRock(e) {
     if(e) {
         let result = getWinner("rock", getComputerMove()); 
         output.innerHTML = getResult(result);
+        console.log(getResult(result));
+    }
+    }
+
+rock.addEventListener("click", selectRock);
+
+let paper = document.querySelector("#paper")
+function selectPaper(e) {
+    if(e) {
+        let result = getWinner("paper", getComputerMove()); 
+        output.innerHTML = getResult(result);
+        console.log(getResult(result));
+    }
+    }
+
+rock.addEventListener("click", selectPaper);
+
+let scissors = document.querySelector("#scissors")
+function selectScissors(e) {
+    if(e) {
+        let result = getWinner("scissors", getComputerMove()); 
+        output.innerHTML = getResult(result);
+        console.log(getResult(result));
     }
 }
-rock.addEventListener("click", selectRock);
+rock.addEventListener("click", selectScissors);
+
+
+
+
