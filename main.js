@@ -1,37 +1,37 @@
-let playerMove = "rock";
-let computerMove = "scissors";
+let playerMove = "paper";
+let computerMove = "paper";
 
-if (playerMove === "rock" && computerMove === "paper") {  
- console.log("Computer Wins");
-}
-if (playerMove === "rock" && computerMove === "rock") {  
-    console.log("Draw!");
-   }
-if (playerMove === "rock" && computerMove === "scissors") {  
-    console.log("Player Wins!");
-   }
-if (playerMove === "paper" && computerMove === "rock") {  
-    console.log("Player Wins");
-   }
-if (playerMove === "paper" && computerMove === "paper") {  
-    console.log("Draw!");
-   }
-if (playerMove === "paper" && computerMove === "scissors") {  
-    console.log("Computer Wins");
-   }
-if (playerMove === "scissors" && computerMove === "paper") {  
-    console.log("Player Wins");
-   }
-if (playerMove === "scissors" && computerMove === "rock") {  
-    console.log("Computer Wins");
-   }
-if (playerMove === "scissors" && computerMove === "scissors") {  
-    console.log("Draw!");
-   }
+// if (playerMove === "rock" && computerMove === "paper") {  
+//  console.log("Computer Wins");
+// }
+// if (playerMove === "rock" && computerMove === "rock") {  
+//     console.log("Draw!");
+//    }
+// if (playerMove === "rock" && computerMove === "scissors") {  
+//     console.log("Player Wins!");
+//    }
+// if (playerMove === "paper" && computerMove === "rock") {  
+//     console.log("Player Wins");
+//    }
+// if (playerMove === "paper" && computerMove === "paper") {  
+//     console.log("Draw!");
+//    }
+// if (playerMove === "paper" && computerMove === "scissors") {  
+//     console.log("Computer Wins");
+//    }
+// if (playerMove === "scissors" && computerMove === "paper") {  
+//     console.log("Player Wins");
+//    }
+// if (playerMove === "scissors" && computerMove === "rock") {  
+//     console.log("Computer Wins");
+//    }
+// if (playerMove === "scissors" && computerMove === "scissors") {  
+//     console.log("Draw!");
+//    }
 
    //Task2
 
-function game(playerMove, computerMove) {
+function getWinner(playerMove, computerMove) {
     if (playerMove === "rock" && computerMove === "paper") {  
         return -1;
        }
@@ -60,3 +60,5 @@ function game(playerMove, computerMove) {
         return 0;
           }
 }
+let result = getWinner(playerMove, computerMove);
+console.log(result);
