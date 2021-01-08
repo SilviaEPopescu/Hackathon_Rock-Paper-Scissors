@@ -60,10 +60,21 @@ function getWinner(playerMove, computerMove) {
         return 0;
           }
 }
-let result = getWinner(playerMove, computerMove);
-console.log(result);
+
 
 //Task3
 
-let playerMove = prompt("Pick an option");
-
+playerMove = prompt("Pick an option");
+let result = getWinner(playerMove, computerMove);
+function getResult(result) {
+    if (result === 1) {
+        return "Player Wins!"
+    } else if (result === -1) {
+        return "Computer Wins!"
+    } else if (result === 0) {
+        return "Draw!"
+    } else {
+        return "Please enter a valid choice:(rock, paper, scissors)!"
+    }
+}
+alert(getResult(result));
