@@ -93,8 +93,6 @@ function getComputerMove() {
     }
 } 
 
-
-
 //Task6
 
 let games = 0;
