@@ -6,7 +6,24 @@ if (playerMove === "rock" && computerMove === "paper") {
 if (playerMove === "rock" && computerMove === "rock") {  
     console.log("Draw!");
    }
-   if (playerMove === "rock" && computerMove === "scissors") {  
+if (playerMove === "rock" && computerMove === "scissors") {  
     console.log("Player Wins!");
    }
-
+if (playerMove === "paper" && computerMove === "rock") {  
+    console.log("Computer Wins");
+   }
+if (playerMove === "paper" && computerMove === "paper") {  
+    console.log("Computer Wins");
+   }
+if (playerMove === "paper" && computerMove === "scissors") {  
+    console.log("Computer Wins");
+   }
+if (playerMove === "scissors" && computerMove === "paper") {  
+    console.log("Computer Wins");
+   }
+if (playerMove === "scissors" && computerMove === "rock") {  
+    console.log("Computer Wins");
+   }
+if (playerMove === "scissors" && computerMove === "scissors") {  
+    console.log("Computer Wins");
+   }
