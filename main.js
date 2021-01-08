@@ -66,15 +66,29 @@ function getWinner(playerMove, computerMove) {
 
 playerMove = prompt("Pick an option");
 let result = getWinner(playerMove, computerMove);
-function getResult(result) {
-    if (result === 1) {
-        return "Player Wins!"
-    } else if (result === -1) {
-        return "Computer Wins!"
-    } else if (result === 0) {
-        return "Draw!"
+// function getResult(result) {
+//     if (result === 1) {
+//         return "Player Wins!"
+//     } else if (result === -1) {
+//         return "Computer Wins!"
+//     } else if (result === 0) {
+//         return "Draw!"
+//     } else {
+//         return "Please enter a valid choice:(rock, paper, scissors)!"
+//     }
+// }
+
+alert(result);
+
+//Task4
+
+function getComputerMove() {
+    let choice = Math.floor(Math.random() * 2); 
+    if (choice === 0){
+      return "rock";
+    } else if (choice === 0){
+      return "paper";
     } else {
-        return "Please enter a valid choice:(rock, paper, scissors)!"
+      return = "scissors";
     }
-}
-alert(getResult(result));
+} 
