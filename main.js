@@ -1,5 +1,5 @@
-let playerMove = "paper";
-let computerMove = "paper";
+let playerMove;
+//let computerMove = "paper";
 
 // if (playerMove === "rock" && computerMove === "paper") {  
 //  console.log("Computer Wins");
@@ -64,31 +64,39 @@ function getWinner(playerMove, computerMove) {
 
 //Task3
 
-playerMove = prompt("Pick an option");
-let result = getWinner(playerMove, computerMove);
-// function getResult(result) {
-//     if (result === 1) {
-//         return "Player Wins!"
-//     } else if (result === -1) {
-//         return "Computer Wins!"
-//     } else if (result === 0) {
-//         return "Draw!"
-//     } else {
-//         return "Please enter a valid choice:(rock, paper, scissors)!"
-//     }
-// }
 
-alert(result);
+function getResult(result) {
+    if (result === 1) {
+        return "Player Wins!"
+    } else if (result === -1) {
+        return "Computer Wins!"
+    } else if (result === 0) {
+        return "Draw!"
+    } else {
+        return "Please enter a valid choice:(rock, paper, scissors)!"
+    }
+}
+
+
 
 //Task4
 
 function getComputerMove() {
     let choice = Math.floor(Math.random() * 2); 
+    console.log(choice);
     if (choice === 0){
       return "rock";
-    } else if (choice === 0){
+    } else if (choice === 1){
       return "paper";
     } else {
-      return = "scissors";
+      return "scissors";
     }
 } 
+
+let endGame;
+do {
+    playerMove = prompt("Pick an option");
+    let result = getWinner(playerMove, getComputerMove());
+    alert(getResult(result));
+    endGame = confirm("Do you want to play again?");
+} while(endGame)
