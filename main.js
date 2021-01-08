@@ -102,31 +102,39 @@ let draws = 0;
 
 function getResult(result) {
     games++;
-    console.log(`Games ${games}`)
+    
     if (result === 1) {
         wins++;
-        console.log(`Wins ${wins}`)
+        
         return "Player Wins!"
     } else if (result === -1) {
         losses++;
-        console.log(`Losses ${losses}`)
+        
         return "Computer Wins!"
     } else if (result === 0) {
         draws++;
-        console.log(`Draws ${draws}`)
+        
         return "Draw!"
     } else {
         return "Please enter a valid choice:(rock, paper, scissors)!"
     }
 }
 
+function outputResults(){
+    console.log(`Games ${games}`)
+    console.log(`Wins ${wins}`)
+    console.log(`Losses ${losses}`)
+    console.log(`Draws ${draws}`)
+}
+
 //Task5
 
 let endGame;
-do {
-    playerMove = prompt("Pick an option");
-    let result = getWinner(playerMove, getComputerMove());
-    alert(getResult(result));
-    endGame = confirm("Do you want to play again?");
-} while(endGame)
+// do {
+//     playerMove = prompt("Pick an option");
+//     let result = getWinner(playerMove, getComputerMove());
+//     alert(getResult(result));
+//     outputResults();
+//     endGame = confirm("Do you want to play again?");
+// } while(endGame)
 
