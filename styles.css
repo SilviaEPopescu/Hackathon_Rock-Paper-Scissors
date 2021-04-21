@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 
-
+.main{
+ border: solid rgb(199, 196, 196);
+ background: linear-gradient(
+    to right,
+    hsl(186, 26%, 93%) 50%,
+    rgb(205, 206, 206) 100%
+    
+  );
+}
 .container {
     display: flex;
     flex-direction: row;
@@ -21,6 +29,9 @@
   width: 80%;
   height: 80%;
   align-self: center;
+  border: solid slategrey;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 .containerOne #rock {
   align-self: center;
@@ -56,7 +67,6 @@
   margin-bottom: 10px;
   align-self: center;
   
-  
 }
   
   #output {
@@ -66,11 +76,36 @@
     margin: 4px 2px;
 
   }
-  .scores {
+
+  .scoresBoard {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-grow: auto;
       text-align: center;
       padding: 15px 32px;
       font-size: 20px;
+  }
+  .scores{
+    justify-self: center;
+  }
+
+  .buttonStop {
+
+    background: linear-gradient(
+      to right,
+      hsl(234, 17%, 68%) 50%,
+      rgb(90, 100, 114) 100%
+      
+    );
+    border-radius: 25px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
+    font-family: "Nunito", sans-serif;
+    font-size: larger;
+    width: 180px;
+    margin-bottom: 10px;
+    align-self: center;
+    
   }

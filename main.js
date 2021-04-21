@@ -114,17 +114,17 @@ function getResult(result) {
     } else if (result === 0) {
         draws++;
         
-        return "Draw!"
+        return "It`s a Draw!"
     } else {
         return "Please enter a valid choice:(rock, paper, scissors)!"
     }
 }
 
 function outputResults(){
-    games1.innerHTML = `Games ${games}`;
-    wins1.innerHTML = `Wins ${wins}`;
-    losses1.innerHTML = `Losses ${losses}`;
-    draws1.innerHTML = `Draws ${draws}`;
+    games1.innerHTML = `Games: ${games}`;
+    wins1.innerHTML = `Wins: ${wins}`;
+    losses1.innerHTML = `Losses: ${losses}`;
+    draws1.innerHTML = `Draws: ${draws}`;
 }
 
 //Task5
