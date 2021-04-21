@@ -80,12 +80,11 @@
   .scoresBoard {
       display: flex;
       flex-direction: column;
-      flex-grow: auto;
       text-align: center;
-      padding: 15px 32px;
       font-size: 20px;
   }
   .scores{
+    margin-top: 5px;
     justify-self: center;
   }
 
@@ -108,4 +107,8 @@
     margin-bottom: 10px;
     align-self: center;
     
+  }
+  #name{
+    text-align: center;
+    color: rgb(65, 73, 80);
   }

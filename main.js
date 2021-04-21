@@ -30,6 +30,20 @@ let computerMove;
 //    }
 
    //Task2
+  function getUserName() {
+    var person = prompt("Please enter your name");
+    if (person == null || person == "") {
+      alert("You must enter your name into the prompt box!");
+      getUserName()
+    } else if (!/^[a-zA-Z]+$/.test(person)) {
+      alert("Please only enter letters");
+      getUserName()
+    } else {
+      var name = document.querySelector("#name");
+      name.innerHTML = "User name: " + person[0].toUpperCase() + person.slice(1);
+    }
+  }
+  getUserName();
 
 function getWinner(playerMove, computerMove) {
     if (playerMove === "rock" && computerMove === "paper") {  
@@ -134,16 +148,13 @@ stopB.addEventListener("click", endGame);
 
 function endGame(){
   let question = confirm("Do you want to play again?");
-  if(question == true){window.location.reload();}
+  if(question == true){
+    window.location.reload();
+  } else {
+    alert("Game is over!")
+    window.location.reload();
+  }
 }
-// do {
-//     playerMove = prompt("Pick an option");
-//     let result = getWinner(playerMove, getComputerMove());
-//     alert(getResult(result));
-//     outputResults();
-//     endGame = confirm("Do you want to play again?");
-// } while(endGame)
-
 //task7
 
 let games1 = document.querySelector("#games");
@@ -184,7 +195,3 @@ function selectScissors(e) {
     }
 }
 scissors.addEventListener("click", selectScissors);
-
-
-
-
