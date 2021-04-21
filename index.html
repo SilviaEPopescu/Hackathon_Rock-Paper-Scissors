@@ -6,21 +6,33 @@
     </head>
     <body>
     <div class="container">
-        <button class="button" id="rock">rock</button>
-        <button class="button" id="paper">paper</button>
-        <button class="button" id="scissors">scissors</button>
-        <textarea id="output"></textarea>
-
+        <div class="containerOne">
+            <img src="./images/rock.PNG" alt="Rock" style="width:100%"/>
+            <button class="button" id="rock">Rock</button>
+        </div>
+        <div class="containerOne">
+            <img src="./images/paper.PNG" alt="Paper" style="width:100%"/>
+            <button class="button" id="paper">Paper</button>
+        </div>
+        <div class="containerOne">
+            <img src="./images/scissors.PNG" alt="Scissors" style="width:100%"/>
+            <button class="button" id="scissors">Scissors</button>
+        </div>
+      </div>
+    <div>
+        <h2 id="output">Happy Game!</h2>
     </div>
     <div id="scores">
-       <textarea class="scores" id="games" ></textarea>
-       <textarea class="scores" id="wins" ></textarea>
-       <textarea class="scores" id="losses" ></textarea>
-       <textarea class="scores" id="draws" ></textarea>
+       <h4 class="scores" id="games" >Games</h4>
+       <h4 class="scores" id="wins" >Wins</h4>
+       <h4 class="scores" id="losses" >Losses</h4>
+       <h4 class="scores" id="draws" >Draws</h4>
        
 
     </div>
-        
+        <div>
+            <button class="button" id="stopButton">Finish Game</button>
+        </div>
         
         <script src="main.js">
 

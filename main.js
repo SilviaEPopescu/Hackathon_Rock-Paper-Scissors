@@ -1,5 +1,5 @@
 let playerMove;
-//let computerMove = "paper";
+let computerMove;
 
 // if (playerMove === "rock" && computerMove === "paper") {  
 //  console.log("Computer Wins");
@@ -121,10 +121,6 @@ function getResult(result) {
 }
 
 function outputResults(){
-    // console.log(`Games ${games}`)
-    // console.log(`Wins ${wins}`)
-    // console.log(`Losses ${losses}`)
-    // console.log(`Draws ${draws}`)
     games1.innerHTML = `Games ${games}`;
     wins1.innerHTML = `Wins ${wins}`;
     losses1.innerHTML = `Losses ${losses}`;
@@ -132,8 +128,14 @@ function outputResults(){
 }
 
 //Task5
+let stopB= document.querySelector("#stopButton");
 
-let endGame;
+stopB.addEventListener("click", endGame);
+
+function endGame(){
+  let question = confirm("Do you want to play again?");
+  if(question == true){window.location.reload();}
+}
 // do {
 //     playerMove = prompt("Pick an option");
 //     let result = getWinner(playerMove, getComputerMove());

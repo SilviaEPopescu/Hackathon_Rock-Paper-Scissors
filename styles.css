@@ -1,20 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.containerOne {
+ display: flex;
+ flex-direction: column;
+  width: 150%;
+  max-width: 150px;
+  height: 250px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.containerOne img {
+  width: 80%;
+  height: 80%;
+  align-self: center;
+}
+.containerOne #rock {
+  align-self: center;
+  top: 80%;
 
 }
+.containerOne #paper {
+  align-self: center;
+  top: 80%;
+ 
+}
+.containerOne #scissors {
+  align-self: center;
+  top: 80%;
+   
+}
 .button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
+
+  background: linear-gradient(
+    to right,
+    hsl(187, 61%, 56%) 50%,
+    rgb(1, 113, 128) 100%
+    
+  );
+  border-radius: 25px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 3.5px;
+  padding-bottom: 3.5px;
+  font-family: "Nunito", sans-serif;
+  font-size: larger;
+  width: 100px;
+  margin-bottom: 10px;
+  align-self: center;
+  
+  
+}
+  
   #output {
     text-align: center;
     font-size: 30px;
